@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
 }
-#Main-card {
+.Main-card {
   width: 420px;
   height: 360px;
   border: 1px solid #e5e7eb;
@@ -20,7 +20,9 @@
   padding: 32px;
   display: flex;
   justify-content: center;
+  
 }
+
 #battery-box {
   width: 120px;
   height: 120px;
@@ -42,5 +44,102 @@
   width: 80px;
   height: 80px;
   border-radius: 16px;
-  background-color: white;
+  background-color: #cbd5e1;
 }
+.battery-full{
+  width: 60px;
+  height: 80px;
+  border-radius: 16px;
+  background-color: #22C55E;
+  display: none;
+}
+#battery-tip {
+  width: 8px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1f2937;
+}
+#box-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+}
+.percentage-text {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #1f2937;
+  display: none;
+}
+
+#charging-box {
+  width: 110px;
+  height: 36px;
+  border-radius: 999px;
+ background-color: #F3F4F6;
+ /* background-color: #dcfce7; */
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.charging-icon{
+  width: 14px;
+  height: 14px;
+  background-image: url(/picture/charge-icon.png);
+  background-size: cover;
+  /* background-color: #22C55E; */
+ 
+}
+#icon-box{
+  width: 90px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: none;
+  background-color: #dcfce7;
+  border-radius: 999px;
+}
+.charging {
+  font-weight: 600;
+  font-size: 18px;
+  color: #15803D;
+  
+}
+.charging-big{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#battery-text{
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  color: #6B7280;
+}
+#Active-charging-text{
+  display: none;
+}
+/* Battery-empty */
+.battery-empty{
+  font-weight: 700;
+  font-size: 56px;
+  color: #CBD5E1;
+}
+.empty-text{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #4b5563;
+}
+.battery-empty1{
+  font-weight: 500;
+  font-size: 16px;
+  color: #6B7280;
+}
+
