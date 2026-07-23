@@ -1,57 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="mn">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Project</title>
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <script src="/index.js"></script>
-    <header>
-      <!-- Main Section -->
-      <div class="Container">
-        <div class="Main-card">
-          <div id="big-box">
-            <div id="box-gap">
-              <div id="battery-box">
-                <div class="battery-icon">
-                  <div id="battery-inside">
-                    <div class="battery-full"></div>
-                  </div>
-                </div>
-                <div id="battery-tip"></div>
-              </div>
-              <div class="percentage-text">76%</div>
-              <div class="battery-empty">--%</div>
-              <div class="battery-loading">76%</div>
-            </div>
-            <div class="charging-big">
-              <div id="charging-box" class="loading-background">
-                <div id="icon-box">
-                  <div class="charging-icon"></div>
-                  <div class="charging">Charging</div>
-                </div>
-                <div class="empty-text">Connecting</div>
-                <div class="loading-text">Loading</div>
-              </div>
-              <div id="charging-text">
-                <div id="Active-charging-text">
-                  <p class="battery-text">Battery is charging</p>
-                  <p class="battery-text">Estimated full: 42min</p>
-                </div>
-                <div class="empty-text1">
-                  Waiting for battery information...
-                </div>
-                <div class="battery-loading-text1">
-                  Fetching battery statistics values...
-                </div>
-                <!-- <p class="battery-loading">Loading battery...</p> -->
-              </div>
-            </div>
-          </div>
+    <div class="Container">
+      <div class="app-card" id="dashboardCard">
+        <div class="spinner" id="loadingSpinner"></div>
+        <div class="battery-container" id="batteryShell" style="display: flex">
+          <div id="batteryTip"></div>
+          <div class="battery-fill" id="batteryFill"></div>
+        </div>
+        <div class="percentage" id="percentageReadout" style="display: flex">
+          --%
+        </div>
+        <div class="charging-indicator" id="chargingBadge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fil="currentColor">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+          </svg>
+          <span>Plugged In</span>
+        </div>
+        <div class="warning-message" style="display: none">
+          API Not Supported
+        </div>
+        <div class="captain" id="captainText" style="display: flex">
+          Reading device battery status...
         </div>
       </div>
-    </header>
+    </div>
+    <script src="/index.js"></script>
   </body>
 </html>
